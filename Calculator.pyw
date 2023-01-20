@@ -4,6 +4,7 @@ from tkinter import messagebox
 window = Tk()
 window.title('ماشین حساب')
 window.geometry("250x300")
+window.resizable(width=False, height=False)
 color = "#0F7BDB"
 window.configure(bg=color)
 num1 = StringVar()
@@ -22,7 +23,7 @@ B_plus   =Button(window, text = "+",font=(None,20),command= lambda:plus())  .pla
 B_minus  =Button(window, text = "-",font=(None,20),command= lambda:minus()) .place(x=133,y=130,width=45)
 B_div    =Button(window, text = "÷",font=(None,20),command= lambda:div())   .place(x=190,y=130,width=45)
 EXIT     =Button(window, text="خروج",width=10,height=2 ,command=window.destroy).place(x=85,y=250)
-B_result =Label(window,bg="black",   width=20,font=(None,13))
+B_result =Label(window,bg=color,   width=20,font=(None,13))
 B_result.place(x=30,y=200)
 
 def result(x):
