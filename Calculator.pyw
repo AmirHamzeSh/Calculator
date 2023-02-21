@@ -29,12 +29,12 @@ B_result.place(x=30,y=200)
 def result(x):
     if x == 'error':
         B_result.config(bg ='red')
-        B_result.config(text = 'something went wrong')
+        B_result.config(text = '!مشکلی پیش آمد')
 
     elif x == 'division zero error':
         B_result.config(bg = 'pink')
         B_result.config(fg = 'black')
-        B_result.config(text= 'Can Not Divide By 0')
+        B_result.config(text= 'نمیتوان بر صفر تقسیم کرد')
         
     else:
         B_result.config(bg = 'black')
