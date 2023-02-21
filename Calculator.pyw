@@ -28,18 +28,18 @@ B_result.place(x=30,y=200)
 
 def result(x):
     if x == 'error':
-        B_result["bg"] = 'red'
-        B_result["text"] = 'something went wrong'
+        B_result.config(bg ='red')
+        B_result.config(text = 'something went wrong')
 
     elif x == 'division zero error':
-        B_result["bg"] = 'pink'
-        B_result["fg"] = 'black'
-        B_result["text"] = 'Can Not Divide By 0'
+        B_result.config(bg = 'pink')
+        B_result.config(fg = 'black')
+        B_result.config(text= 'Can Not Divide By 0')
         
     else:
-        B_result["bg"] = 'black'
-        B_result["fg"] = 'white'
-        B_result["text"] = x
+        B_result.config(bg = 'black')
+        B_result.config(fg = 'white')
+        B_result.config(text = x)
 
 def mul():
     try:
