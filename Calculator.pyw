@@ -1,10 +1,10 @@
 from tkinter import *
-from tkinter import messagebox
 # ===============================
 window = Tk()
 window.title('ماشین حساب')
 window.geometry("250x300")
 window.resizable(width=False, height=False)
+window.iconbitmap("calc.ico")
 color = "#0F7BDB"
 window.configure(bg=color)
 num1 = StringVar()
