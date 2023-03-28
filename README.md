@@ -1,1 +1,1 @@
-[screen](pic.png)
+![screen](pic.png)
